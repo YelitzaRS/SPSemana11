@@ -63,6 +63,7 @@ public class FrmReporteClienteConsulta extends JFrame implements ActionListener 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 754, 574);
 		contentPane = new JPanel();
+		contentPane.setBackground(UIManager.getColor("info"));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -80,6 +81,7 @@ public class FrmReporteClienteConsulta extends JFrame implements ActionListener 
 		contentPane.add(lblDni);
 		
 		btnFiltrar = new JButton("Filtrar");
+		btnFiltrar.setBackground(new Color(0, 255, 255));
 		btnFiltrar.addActionListener(this);
 		btnFiltrar.setBounds(503, 59, 162, 23);
 		contentPane.add(btnFiltrar);

@@ -61,6 +61,7 @@ public class FrmReporteClienteLista extends JFrame implements ActionListener {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 757, 616);
 		contentPane = new JPanel();
+		contentPane.setBackground(UIManager.getColor("info"));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -73,6 +74,7 @@ public class FrmReporteClienteLista extends JFrame implements ActionListener {
 		contentPane.add(lblListaDeClientes);
 		
 		btnFiltrar = new JButton("Filtrar");
+		btnFiltrar.setBackground(new Color(0, 255, 255));
 		btnFiltrar.addActionListener(this);
 		btnFiltrar.setBounds(10, 49, 721, 23);
 		contentPane.add(btnFiltrar);

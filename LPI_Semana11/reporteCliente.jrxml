@@ -8,6 +8,7 @@
 	<field name="apellidos" class="java.lang.String"/>
 	<field name="dni" class="java.lang.String"/>
 	<field name="fechaNacimiento" class="java.lang.String"/>
+	<field name="tipclnombre" class="java.lang.String"/>
 	<background>
 		<band/>
 	</background>
@@ -75,6 +76,13 @@
 				</textElement>
 				<text><![CDATA[FECHA NAC.]]></text>
 			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="408" y="0" width="100" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TIPO]]></text>
+			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
@@ -106,6 +114,11 @@
 				<reportElement x="308" y="0" width="100" height="20"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{fechaNacimiento}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="1" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{tipclnombre}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

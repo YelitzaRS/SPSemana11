@@ -11,10 +11,18 @@ public class Cliente {
 	private String apellidos;
 	private String dni;
 	private Date fechaNacimiento;
+	private String tipclnombre;
 	private Tipo_cliente tipo_cliente;
 	
 	
 	
+	public String getTipclnombre() {
+		tipclnombre = tipo_cliente.getNombre();
+		return tipclnombre;
+	}
+	public void setTipclnombre(String tipclnombre) {
+		this.tipclnombre = tipclnombre;
+	}
 	public int getIdCliente() {
 		return idCliente;
 	}
