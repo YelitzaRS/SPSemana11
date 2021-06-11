@@ -1,9 +1,7 @@
 package entidad;
-
 import java.sql.Date;
 
 public class Club {
-
 	private int idClub;
 	private String nombre;
 	private Date  fechaCreacion;
@@ -48,7 +46,5 @@ public class Club {
 	public void setAuspiciadorNombre(String auspiciadorNombre) {
 		this.auspiciadorNombre = auspiciadorNombre;
 	}
-	
-	
 	
 }

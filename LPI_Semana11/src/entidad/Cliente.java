@@ -1,11 +1,8 @@
 package entidad;
 
-
 import java.sql.Date;
 
 public class Cliente {
-
-	
 	private int idCliente;
 	private String nombres;
 	private String apellidos;
@@ -63,4 +60,7 @@ public class Cliente {
 	
 	
 	
+
+
+
 }
